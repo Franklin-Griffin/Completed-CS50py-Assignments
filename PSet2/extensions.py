@@ -2,7 +2,7 @@ print("File name: ", end="")
 x = input().split(".")[-1]
 if x == "gif":
 	print("image/gif")
-elif x == "jpg" or x == "jpeg:
+elif x == "jpg" or x == "jpeg":
 	print("image/jpeg")
 elif x == "png":
 	print("image/png")

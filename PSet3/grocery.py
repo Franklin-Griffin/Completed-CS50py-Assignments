@@ -9,6 +9,6 @@ while True:
 			items[item] = 1
 	except EOFError:
 		items = dict(sorted(items.items()))
-		for k,v in items:
+		for k,v in items.items():
 			print(f"{v} {k}")
 		break

@@ -1,7 +1,7 @@
 while True:
 	try:
 		print("Fraction: ", end="")
-		x,y = input.split("/")
+		x,y = input().split("/")
 		if x > y:
 			continue
 		frac = int(x) / int(y)

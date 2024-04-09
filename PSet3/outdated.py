@@ -21,6 +21,8 @@ while True:
             if len(x) != 3:
                 continue
             y,m,d = str(int(x[2])), str(int(x[0])), str(int(x[1]))
+            if int(d) > 31:
+                continue
             print(f"{y.zfill(4)}-{m.zfill(2)}-{d.zfill(2)}")
         else:
             x = date.split(" ")

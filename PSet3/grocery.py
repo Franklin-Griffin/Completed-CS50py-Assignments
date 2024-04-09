@@ -2,7 +2,7 @@ items = {}
 while True:
 	try:
 		print("Item: ", end="")
-		item = input().lower()
+		item = input().upper()
 		if item in items:
 			items[item] += 1
 		else:

@@ -2,7 +2,7 @@ while True:
 	try:
 		print("Fraction: ", end="")
 		x,y = input().split("/")
-		if x > y:
+		if int(x) > int(y):
 			continue
 		frac = int(x) / int(y)
 		if frac <= 0.01:

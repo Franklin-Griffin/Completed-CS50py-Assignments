@@ -1,7 +1,6 @@
 items = {}
 while True:
 	try:
-		print("Item: ", end="")
 		item = input().upper()
 		if item in items:
 			items[item] += 1

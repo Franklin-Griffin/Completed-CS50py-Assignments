@@ -10,7 +10,7 @@ while True:
 		elif frac >= 0.99:
 			print("F")
 		else:
-			print(f"{frac}%")
+			print(f"{frac*100}%")
 	except (ValueError, ZeroDivisionError):
 		continue
 	else:

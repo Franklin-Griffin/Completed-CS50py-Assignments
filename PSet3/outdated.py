@@ -26,7 +26,11 @@ while True:
             x = date.split(" ")
             if len(x) != 3:
                 continue
+            if not "," in x[1]:
+                continue
             y,m,d = x[2], str(months.index(x[0]) + 1), x[1][:-1]
+            if int(d) > 31:
+                continue
             print(f"{y.zfill(4)}-{m.zfill(2)}-{d.zfill(2)}")
         break
     except Exception:

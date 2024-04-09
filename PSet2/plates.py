@@ -15,7 +15,7 @@ def is_valid(s):
 			return False
 		if s[i].isalpha() and startNums:
 			return False
-		if s[i] == 0 and not startNums:
+		if s[i] == "0" and not startNums:
 			return False
 		if s[i].isnumeric():
 			startNums = True

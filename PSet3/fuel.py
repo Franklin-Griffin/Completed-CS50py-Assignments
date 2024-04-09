@@ -10,7 +10,7 @@ while True:
 		elif frac >= 0.99:
 			print("F")
 		else:
-			print(f"{int(frac*100)}%")
+			print(f"{round(frac*100)}%")
 	except (ValueError, ZeroDivisionError):
 		continue
 	else:

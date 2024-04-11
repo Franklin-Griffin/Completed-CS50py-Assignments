@@ -5,7 +5,7 @@ while level < 0:
 		level = int(input("Level: "))
 	except Exception:
 		continue
-myNum = random() * level + 1
+myNum = int(random() * level + 1)
 while True:
 	try:
 		guess = int(input("Guess: "))

@@ -4,7 +4,9 @@ def test_convert():
 	assert convert("49/100") == 49
 	with pytest.raises(ValueError):
 		convert("ab/cd")
+	with pytest.raises(ValueError):
 		convert("100")
+	with pytest.raises(ValueError):
 		convert("101/100")
 	with pytest.raises(ZeroDivisionError):
 		convert("100/0")

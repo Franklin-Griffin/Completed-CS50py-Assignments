@@ -1,6 +1,13 @@
+import pytest
 from fuel import convert, gauge
 def test_convert():
 	assert convert("49/100") == 49
+	with pytest.raises(ValueError):
+		convert("ab/cd")
+		convert("100")
+		convert("101/100")
+	with pytest.raises(ZeroDivisionError):
+		convert("100/0")
 def test_gauge():
 	assert gauge(0) == "E"
 	assert gauge(1) == "E"

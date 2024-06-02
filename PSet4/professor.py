@@ -30,7 +30,7 @@ def get_level():
 	n = 0
 	while not n in ["1", "2", "3"]:
 		n = input("Level: ")
-	n = int(n)
+	return int(n)
 
 
 def generate_integer(level):

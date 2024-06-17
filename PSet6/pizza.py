@@ -10,7 +10,7 @@ else:
 	try:
 		with open(sys.argv[1], "r") as f:
 			x = f.readlines()
-			header = x[0]
+			header = x[0].split(",")
 			body = []
 			for row in x[1:]:
 				body.append(row.split(","))

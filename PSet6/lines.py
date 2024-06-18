@@ -12,6 +12,6 @@ else:
 			for line in f.readlines():
 				if not (line.strip() == "" or line.strip().startswith("#")):
 					count += 1
-			sys.exit(count)
+			sys.exit(str(count))
 	except:
 		sys.exit("File does not exist")

@@ -1,5 +1,4 @@
 import sys
-count = 0
 if len(sys.argv) < 2:
 	sys.exit("Too few command-line arguments")
 elif len(sys.argv) > 2:
@@ -13,7 +12,6 @@ else:
 			for line in f.readlines():
 				if not (line.strip() == "" or line.strip().startswith("#")):
 					count += 1
+			print(count)
 	except:
 		sys.exit("File does not exist")
-
-sys.exit(str(count))

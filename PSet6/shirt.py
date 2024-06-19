@@ -6,8 +6,8 @@ elif len(sys.argv) > 3:
 	sys.exit("Too many command-line arguments")
 elif not sys.argv[1].split(".")[-1] in ["jpg","jpeg","png"]:
 	sys.exit("Not an image file")
-elif not sys.argv[2].split(".")[-1] in ["jpg","jpeg","png"]:
-	sys.exit("Not an image file")
+elif sys.argv[1].split(".")[-1] != sys.argv[2].split(".")[-1]:
+	sys.exit("Extensions do not match")
 else:
 	try:
 		with Image.open(sys.argv[1]) as img:
